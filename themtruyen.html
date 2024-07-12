@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý truyện</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <form>
+            <div class="form-group">
+                <label for="id">ID:</label>
+                <input type="text" class="form-control" id="id" name="id">
+            </div>
+            <div class="form-group">
+                <label for="tentruyen">Tên truyện:</label>
+                <input type="text" class="form-control" id="tentruyen" name="tentruyen">
+            </div>
+            <div class="form-group">
+                <label for="inputImage">Hình ảnh:</label>
+                <input type="text" class="form-control" id="inputImage" name="inputImage">
+            </div>
+            <div class="form-group">
+                <label for="tacgia">Tác giả:</label>
+                <input type="text" class="form-control" id="tacgia" name="tacgia">
+            </div>
+            <div class="form-group">
+                <label for="theloai">Thể loại:</label>
+                <select class="form-control" id="theloai" name="theloai">
+                    <option value="Phiêu lưu">Phiêu lưu</option>
+                    <option value="Hành động">Hành động</option>
+                    <option value="Hài hước">Hài hước</option>
+                    <option value="Cổ tích">Cổ tích</option>
+                    <option value="Viễn tưởng">Viễn tưởng</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="content">Mô tả:</label>
+                <textarea class="form-control" id="content" name="content"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary" id="btnUpdate">Cập nhật</button>
+            <button type="button" class="btn btn-success" id="btnSend">Thêm truyện</button>
+        </form>
+        <ul id="comments" class="mt-4"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./themtruyen.js"></script>
+</body>
+
+</html>

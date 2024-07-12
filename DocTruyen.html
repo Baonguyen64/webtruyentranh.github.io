@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+    <header class="header" data-header>
+        <div class="container">
+            <div class="overlay" data-overlay></div>
+            <a href="./index.html" class="logo">
+                <img src="./logo-nettruyen.png" alt="NetTruyen logo">
+            </a>
+            <div class="header-actions">
+                <button class="search-btn">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+                <div class="lang-wrapper">
+                    <label for="language">
+                        <ion-icon name="globe-outline"></ion-icon>
+                    </label>
+                    <select name="language" id="language">
+                        <option value="en">EN</option>
+                        <option value="au">AU</option>
+                        <option value="ar">AR</option>
+                        <option value="tu">TU</option>
+                        <option value="vn">VN</option>
+                    </select>
+                </div>
+                <a href="./dangnhap.html">
+                    <button class="btn btn-primary">Đăng nhập</button></a>
+            </div>
+            <button class="menu-open-btn" data-menu-open-btn>
+                <ion-icon name="reorder-two"></ion-icon>
+            </button>
+            <nav class="navbar" data-navbar>
+                <div class="navbar-top">
+                    <a href="./index.html" class="logo">
+                        <img src="./logo.svg" alt="Filmlane logo">
+                    </a>
+                    <button class="menu-close-btn" data-menu-close-btn>
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+                </div>
+                <ul class="navbar-list">
+                    <li>
+                        <a href="./index.html" class="navbar-link">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar-link">hot</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar-link">Thể loại</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar-link">Đánh giá</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar-link">Xếp hạng</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article>
+            <section class="movie-detail">
+                <div class="container">
+                    <div class="comic-images" id="comicImages"></div>
+                </div>
+            </section>
+
+            <section class="tv-series">
+                <div class="container">
+                    <p class="section-subtitle">Truyện hay nhất</p>
+                    <h2 class="h2 section-title">Truyện hay nhất thế giới</h2>
+                    <div class="row" id="comicList"></div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-brand-wrapper">
+                    <a href="./index.html" class="logo">
+                        <img src="./logo-nettruyen.png" alt="NetTruyen logo">
+                    </a>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="./index.html" class="footer-link">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Hot</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Thể loại</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Đánh Giá</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Xếp hạnh</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="divider"></div>
+                <div class="quicklink-wrapper">
+                    <ul class="quicklink-list">
+                        <li>
+                            <a href="#" class="quicklink-link">Câu hỏi thường gặp</a>
+                        </li>
+                        <li>
+                            <a href="#" class="quicklink-link">Trung tâm trợ giúp</a>
+                        </li>
+                        <li>
+                            <a href="#" class="quicklink-link">Điều khoản sử dụng</a>
+                        </li>
+                        <li>
+                            <a href="#" class="quicklink-link">Sự riêng tư</a>
+                        </li>
+                    </ul>
+                    <ul class="social-list">
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-pinterest"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">
+                    &copy; 2024 <a href="#">Trương Hữu Vinh</a>. All Rights Reserved
+                </p>
+                <img src="./footer-bottom-img.png" alt="Online banking companies logo" class="footer-bottom-img">
+            </div>
+        </div>
+    </footer>
+    <a href="#top" class="go-top" data-go-top>
+        <ion-icon name="chevron-up"></ion-icon>
+    </a>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Lấy dữ liệu từ API khi trang được tải
+            $.get("https://667398136ca902ae11b4afb7.mockapi.io/api/truyen", function(data, status) {
+                if (status === "success") {
+                    // Lặp qua dữ liệu và thêm vào danh sách truyện
+                    data.forEach(function(item) {
+                        appendComic(item);
+                    });
+                } else {
+                    console.error("Không thể lấy dữ liệu");
+                }
+            }); 
+            
+            function appendComic(comic) {
+                // Tạo HTML cho mỗi mục truyện
+                var li = `
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <a href="./DocTruyen.html?id=${comic.id}">                                   
+                                <img src="${comic.inputImage}" class="card-img-top img-fluid" alt="${comic.tentruyen}" style="max-width: 100%; height: 500px;">        
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">${comic.tentruyen}</h5>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                // Thêm HTML vào phần tử có id 'comicList'
+                $('#comicList').append(li);
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            // Lấy comicId từ URL
+            var urlParams = new URLSearchParams(window.location.search);
+            var comicId = urlParams.get('id');
+            
+            // Hàm để lấy các hình ảnh của truyện theo ID
+            function fetchComicImages(comicId) {
+                // Gọi API để lấy dữ liệu truyện theo comicId
+                $.get(`https://667398136ca902ae11b4afb7.mockapi.io/api/truyen/${comicId}`, function (comic, status) {
+                    if (status === "success") {
+                        // Xóa hết nội dung trong #comicImages trước khi thêm mới
+                        $('#comicImages').empty();
+                        
+                        // Duyệt qua từng hình ảnh và thêm vào #comicImages
+                        comic.hinhanh.forEach(function (image) {
+                            var imgElement = `<img src="${image.url}" alt="Hình ảnh ${comic.tentruyen}" style="max-width: 100%; height: auto;">`;
+                            $('#comicImages').append(imgElement);
+                        });
+                    } else {
+                        console.error("Không thể lấy danh sách hình ảnh của truyện từ API");
+                    }
+                });
+            }
+            
+            // Kiểm tra nếu comicId hợp lệ thì gọi hàm fetchComicImages
+            if (comicId) {
+                fetchComicImages(comicId);
+            } else {
+                $('#comicImages').html('<p>ID truyện không được cung cấp trong URL</p>');
+                console.error("ID truyện không được cung cấp trong URL");
+            }
+        });
+    </script>
+</body>
+</html>
